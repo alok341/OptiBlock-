@@ -1,0 +1,66 @@
+// ============================================================
+// Raw module — ai_predictions.csv
+// Preserved exact CSV column names (snake_case)
+// ============================================================
+
+export interface AIPredictionRow {
+  prediction_id: string;
+  asset_id: string;
+  asset_type: string;
+  section_id: string;
+  risk_score: number;
+  health_score: number;
+  priority_score: number;
+  priority_level: string;
+  predicted_failure: string;
+  prediction_confidence: number;
+  prediction_timestamp: string;
+}
+
+export const AI_PREDICTIONS: AIPredictionRow[] = [
+  { prediction_id: "PRED-9001", asset_id: "TRK-104", asset_type: "Track",   section_id: "SEC-102", risk_score: 87, health_score: 42, priority_score: 94, priority_level: "Critical", predicted_failure: "Yes", prediction_confidence: 0.91, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9002", asset_id: "TRK-130", asset_type: "Track",   section_id: "SEC-102", risk_score: 82, health_score: 38, priority_score: 88, priority_level: "Critical", predicted_failure: "Yes", prediction_confidence: 0.88, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9003", asset_id: "TRK-133", asset_type: "Track",   section_id: "SEC-102", risk_score: 79, health_score: 45, priority_score: 85, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.84, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9004", asset_id: "TRK-108", asset_type: "Track",   section_id: "SEC-104", risk_score: 76, health_score: 40, priority_score: 80, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.82, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9005", asset_id: "TRK-109", asset_type: "Track",   section_id: "SEC-107", risk_score: 78, health_score: 36, priority_score: 83, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.85, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9006", asset_id: "TRK-115", asset_type: "Track",   section_id: "SEC-104", risk_score: 74, health_score: 42, priority_score: 78, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.79, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9007", asset_id: "TRK-144", asset_type: "Track",   section_id: "SEC-102", risk_score: 71, health_score: 48, priority_score: 74, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.77, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9008", asset_id: "TRK-147", asset_type: "Track",   section_id: "SEC-102", risk_score: 69, health_score: 50, priority_score: 72, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.75, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9009", asset_id: "TRK-156", asset_type: "Track",   section_id: "SEC-101", risk_score: 73, health_score: 44, priority_score: 77, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.80, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9010", asset_id: "TRK-153", asset_type: "Track",   section_id: "SEC-103", risk_score: 70, health_score: 47, priority_score: 73, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.76, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9011", asset_id: "TRK-166", asset_type: "Track",   section_id: "SEC-107", risk_score: 68, health_score: 49, priority_score: 70, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.74, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9012", asset_id: "TRK-176", asset_type: "Track",   section_id: "SEC-110", risk_score: 72, health_score: 46, priority_score: 76, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.78, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9013", asset_id: "SIG-209", asset_type: "Signal",  section_id: "SEC-108", risk_score: 89, health_score: 56, priority_score: 92, priority_level: "Critical", predicted_failure: "Yes", prediction_confidence: 0.93, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9014", asset_id: "SIG-223", asset_type: "Signal",  section_id: "SEC-108", risk_score: 86, health_score: 11, priority_score: 90, priority_level: "Critical", predicted_failure: "Yes", prediction_confidence: 0.90, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9015", asset_id: "SIG-256", asset_type: "Signal",  section_id: "SEC-108", risk_score: 84, health_score: 19, priority_score: 87, priority_level: "Critical", predicted_failure: "Yes", prediction_confidence: 0.87, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9016", asset_id: "SIG-232", asset_type: "Signal",  section_id: "SEC-103", risk_score: 81, health_score: 16, priority_score: 84, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.85, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9017", asset_id: "SIG-237", asset_type: "Signal",  section_id: "SEC-107", risk_score: 83, health_score: 89, priority_score: 86, priority_level: "Critical", predicted_failure: "Yes", prediction_confidence: 0.88, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9018", asset_id: "SIG-243", asset_type: "Signal",  section_id: "SEC-107", risk_score: 80, health_score: 23, priority_score: 82, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.83, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9019", asset_id: "SIG-241", asset_type: "Signal",  section_id: "SEC-107", risk_score: 77, health_score: 13, priority_score: 79, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.81, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9020", asset_id: "SIG-210", asset_type: "Signal",  section_id: "SEC-101", risk_score: 75, health_score: 60, priority_score: 78, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.79, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9021", asset_id: "SIG-215", asset_type: "Signal",  section_id: "SEC-108", risk_score: 73, health_score: 58, priority_score: 75, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.77, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9022", asset_id: "SIG-216", asset_type: "Signal",  section_id: "SEC-108", risk_score: 74, health_score: 75, priority_score: 76, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.78, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9023", asset_id: "SIG-257", asset_type: "Signal",  section_id: "SEC-108", risk_score: 72, health_score: 64, priority_score: 74, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.76, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9024", asset_id: "SIG-221", asset_type: "Signal",  section_id: "SEC-102", risk_score: 70, health_score: 25, priority_score: 72, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.74, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9025", asset_id: "OHE-311", asset_type: "Traction", section_id: "SEC-108", risk_score: 90, health_score: 30, priority_score: 95, priority_level: "Critical", predicted_failure: "Yes", prediction_confidence: 0.94, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9026", asset_id: "OHE-313", asset_type: "Traction", section_id: "SEC-102", risk_score: 85, health_score: 35, priority_score: 89, priority_level: "Critical", predicted_failure: "Yes", prediction_confidence: 0.89, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9027", asset_id: "OHE-314", asset_type: "Traction", section_id: "SEC-108", risk_score: 83, health_score: 39, priority_score: 86, priority_level: "Critical", predicted_failure: "Yes", prediction_confidence: 0.87, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9028", asset_id: "OHE-315", asset_type: "Traction", section_id: "SEC-102", risk_score: 80, health_score: 50, priority_score: 83, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.84, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9029", asset_id: "OHE-306", asset_type: "Traction", section_id: "SEC-105", risk_score: 78, health_score: 99, priority_score: 80, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.82, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9030", asset_id: "OHE-309", asset_type: "Traction", section_id: "SEC-108", risk_score: 76, health_score: 45, priority_score: 78, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.80, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9031", asset_id: "OHE-323", asset_type: "Traction", section_id: "SEC-107", risk_score: 77, health_score: 83, priority_score: 79, priority_level: "High",     predicted_failure: "Yes", prediction_confidence: 0.81, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9032", asset_id: "OHE-339", asset_type: "Traction", section_id: "SEC-104", risk_score: 79, health_score: 100, priority_score: 81, priority_level: "High",    predicted_failure: "Yes", prediction_confidence: 0.83, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9033", asset_id: "OHE-344", asset_type: "Traction", section_id: "SEC-104", risk_score: 74, health_score: 59, priority_score: 76, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.78, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9034", asset_id: "OHE-346", asset_type: "Traction", section_id: "SEC-105", risk_score: 72, health_score: 66, priority_score: 74, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.76, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9035", asset_id: "OHE-348", asset_type: "Traction", section_id: "SEC-110", risk_score: 73, health_score: 67, priority_score: 75, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.77, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9036", asset_id: "OHE-310", asset_type: "Traction", section_id: "SEC-101", risk_score: 71, health_score: 56, priority_score: 73, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.75, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9037", asset_id: "OHE-320", asset_type: "Traction", section_id: "SEC-103", risk_score: 70, health_score: 37, priority_score: 72, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.74, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9038", asset_id: "OHE-330", asset_type: "Traction", section_id: "SEC-107", risk_score: 75, health_score: 47, priority_score: 77, priority_level: "High",     predicted_failure: "No",  prediction_confidence: 0.79, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9039", asset_id: "TRK-119", asset_type: "Track",   section_id: "SEC-105", risk_score: 67, health_score: 52, priority_score: 69, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.72, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9040", asset_id: "TRK-134", asset_type: "Track",   section_id: "SEC-105", risk_score: 66, health_score: 55, priority_score: 68, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.71, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9041", asset_id: "TRK-173", asset_type: "Track",   section_id: "SEC-105", risk_score: 65, health_score: 53, priority_score: 67, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.70, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9042", asset_id: "SIG-227", asset_type: "Signal",  section_id: "SEC-107", risk_score: 71, health_score: 83, priority_score: 73, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.74, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9043", asset_id: "SIG-247", asset_type: "Signal",  section_id: "SEC-102", risk_score: 69, health_score: 34, priority_score: 71, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.73, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9044", asset_id: "SIG-260", asset_type: "Signal",  section_id: "SEC-101", risk_score: 68, health_score: 5,  priority_score: 70, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.72, prediction_timestamp: "2026-09-22 06:00" },
+  { prediction_id: "PRED-9045", asset_id: "OHE-321", asset_type: "Traction", section_id: "SEC-105", risk_score: 69, health_score: 85, priority_score: 71, priority_level: "Medium",   predicted_failure: "No",  prediction_confidence: 0.73, prediction_timestamp: "2026-09-22 06:00" },
+];

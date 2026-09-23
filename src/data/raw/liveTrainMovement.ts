@@ -1,0 +1,98 @@
+// ============================================================
+// Raw module — live_train_movement.csv
+// Preserved exact CSV column names (snake_case)
+// ============================================================
+
+export interface LiveTrainMovementRow {
+  train_no: string;
+  date: string;
+  section_id: string;
+  direction: string;
+  movement_status: string;
+  delay_min: number;
+  speed_kmph: number;
+  last_update: string;
+}
+
+export const LIVE_TRAIN_MOVEMENT: LiveTrainMovementRow[] = [
+  { train_no: "11045", date: "2026-09-24", section_id: "SEC-106", direction: "Down", movement_status: "At Station",   delay_min: 0,  speed_kmph: 34, last_update: "2026-09-23 12:24" },
+  { train_no: "11048", date: "2026-09-26", section_id: "SEC-102", direction: "Down", movement_status: "At Station",   delay_min: 0,  speed_kmph: 48, last_update: "2026-09-23 11:55" },
+  { train_no: "11005", date: "2026-09-29", section_id: "SEC-101", direction: "Down", movement_status: "At Station",   delay_min: 5,  speed_kmph: 65, last_update: "2026-09-23 16:48" },
+  { train_no: "11056", date: "2026-09-27", section_id: "SEC-102", direction: "Up",   movement_status: "On Time",      delay_min: 15, speed_kmph: 53, last_update: "2026-09-23 12:14" },
+  { train_no: "11027", date: "2026-09-25", section_id: "SEC-107", direction: "Up",   movement_status: "On Time",      delay_min: 3,  speed_kmph: 71, last_update: "2026-09-23 13:50" },
+  { train_no: "11065", date: "2026-09-25", section_id: "SEC-102", direction: "Down", movement_status: "Departed",     delay_min: 0,  speed_kmph: 42, last_update: "2026-09-23 16:07" },
+  { train_no: "11074", date: "2026-09-23", section_id: "SEC-104", direction: "Up",   movement_status: "Approaching",  delay_min: 5,  speed_kmph: 47, last_update: "2026-09-23 17:47" },
+  { train_no: "11011", date: "2026-09-27", section_id: "SEC-103", direction: "Up",   movement_status: "Delayed",      delay_min: 3,  speed_kmph: 44, last_update: "2026-09-23 16:30" },
+  { train_no: "11041", date: "2026-09-24", section_id: "SEC-105", direction: "Down", movement_status: "Delayed",      delay_min: 2,  speed_kmph: 50, last_update: "2026-09-23 12:31" },
+  { train_no: "11108", date: "2026-09-29", section_id: "SEC-107", direction: "Down", movement_status: "Delayed",      delay_min: 2,  speed_kmph: 45, last_update: "2026-09-23 12:15" },
+  { train_no: "11019", date: "2026-09-23", section_id: "SEC-104", direction: "Down", movement_status: "Delayed",      delay_min: 5,  speed_kmph: 33, last_update: "2026-09-23 10:02" },
+  { train_no: "11063", date: "2026-09-29", section_id: "SEC-110", direction: "Up",   movement_status: "At Station",   delay_min: 0,  speed_kmph: 20, last_update: "2026-09-23 17:14" },
+  { train_no: "11012", date: "2026-09-24", section_id: "SEC-106", direction: "Up",   movement_status: "At Station",   delay_min: 0,  speed_kmph: 67, last_update: "2026-09-23 13:22" },
+  { train_no: "11037", date: "2026-09-27", section_id: "SEC-106", direction: "Up",   movement_status: "Departed",     delay_min: 12, speed_kmph: 55, last_update: "2026-09-23 16:22" },
+  { train_no: "11090", date: "2026-09-23", section_id: "SEC-103", direction: "Down", movement_status: "Departed",     delay_min: 0,  speed_kmph: 55, last_update: "2026-09-23 14:47" },
+  { train_no: "11092", date: "2026-09-26", section_id: "SEC-110", direction: "Down", movement_status: "Departed",     delay_min: 2,  speed_kmph: 36, last_update: "2026-09-23 08:55" },
+  { train_no: "11110", date: "2026-09-25", section_id: "SEC-102", direction: "Up",   movement_status: "At Station",   delay_min: 15, speed_kmph: 81, last_update: "2026-09-23 17:13" },
+  { train_no: "11001", date: "2026-09-23", section_id: "SEC-102", direction: "Up",   movement_status: "Departed",     delay_min: 0,  speed_kmph: 64, last_update: "2026-09-23 14:43" },
+  { train_no: "11089", date: "2026-09-27", section_id: "SEC-103", direction: "Up",   movement_status: "At Station",   delay_min: 0,  speed_kmph: 35, last_update: "2026-09-23 16:50" },
+  { train_no: "11105", date: "2026-09-26", section_id: "SEC-109", direction: "Down", movement_status: "Approaching",  delay_min: 12, speed_kmph: 21, last_update: "2026-09-23 08:12" },
+  { train_no: "11066", date: "2026-09-28", section_id: "SEC-103", direction: "Down", movement_status: "At Station",   delay_min: 2,  speed_kmph: 32, last_update: "2026-09-23 13:33" },
+  { train_no: "11046", date: "2026-09-29", section_id: "SEC-104", direction: "Up",   movement_status: "Departed",     delay_min: 5,  speed_kmph: 53, last_update: "2026-09-23 11:11" },
+  { train_no: "11032", date: "2026-09-23", section_id: "SEC-109", direction: "Up",   movement_status: "Approaching",  delay_min: 15, speed_kmph: 50, last_update: "2026-09-23 12:35" },
+  { train_no: "11071", date: "2026-09-29", section_id: "SEC-106", direction: "Up",   movement_status: "Departed",     delay_min: 12, speed_kmph: 63, last_update: "2026-09-23 14:14" },
+  { train_no: "11043", date: "2026-09-27", section_id: "SEC-110", direction: "Up",   movement_status: "At Station",   delay_min: 0,  speed_kmph: 74, last_update: "2026-09-23 11:35" },
+  { train_no: "11013", date: "2026-09-26", section_id: "SEC-107", direction: "Down", movement_status: "Approaching",  delay_min: 8,  speed_kmph: 66, last_update: "2026-09-23 14:50" },
+  { train_no: "11016", date: "2026-09-27", section_id: "SEC-110", direction: "Down", movement_status: "At Station",   delay_min: 3,  speed_kmph: 43, last_update: "2026-09-23 17:45" },
+  { train_no: "11115", date: "2026-09-28", section_id: "SEC-106", direction: "Up",   movement_status: "Departed",     delay_min: 0,  speed_kmph: 49, last_update: "2026-09-23 09:42" },
+  { train_no: "11077", date: "2026-09-29", section_id: "SEC-103", direction: "Up",   movement_status: "Delayed",      delay_min: 3,  speed_kmph: 75, last_update: "2026-09-23 14:30" },
+  { train_no: "11098", date: "2026-09-28", section_id: "SEC-101", direction: "Down", movement_status: "Delayed",      delay_min: 2,  speed_kmph: 39, last_update: "2026-09-23 16:04" },
+  { train_no: "11025", date: "2026-09-24", section_id: "SEC-110", direction: "Down", movement_status: "Delayed",      delay_min: 0,  speed_kmph: 73, last_update: "2026-09-23 16:31" },
+  { train_no: "11079", date: "2026-09-29", section_id: "SEC-104", direction: "Down", movement_status: "Departed",     delay_min: 0,  speed_kmph: 88, last_update: "2026-09-23 13:23" },
+  { train_no: "11023", date: "2026-09-23", section_id: "SEC-110", direction: "Down", movement_status: "Approaching",  delay_min: 12, speed_kmph: 52, last_update: "2026-09-23 17:35" },
+  { train_no: "11097", date: "2026-09-27", section_id: "SEC-103", direction: "Down", movement_status: "At Station",   delay_min: 0,  speed_kmph: 32, last_update: "2026-09-23 10:47" },
+  { train_no: "11057", date: "2026-09-23", section_id: "SEC-109", direction: "Down", movement_status: "Delayed",      delay_min: 0,  speed_kmph: 52, last_update: "2026-09-23 16:07" },
+  { train_no: "11111", date: "2026-09-26", section_id: "SEC-107", direction: "Up",   movement_status: "At Station",   delay_min: 0,  speed_kmph: 62, last_update: "2026-09-23 12:26" },
+  { train_no: "11031", date: "2026-09-27", section_id: "SEC-108", direction: "Down", movement_status: "Approaching",  delay_min: 5,  speed_kmph: 52, last_update: "2026-09-23 13:52" },
+  { train_no: "11054", date: "2026-09-23", section_id: "SEC-109", direction: "Down", movement_status: "At Station",   delay_min: 0,  speed_kmph: 35, last_update: "2026-09-23 13:59" },
+  { train_no: "11119", date: "2026-09-29", section_id: "SEC-102", direction: "Down", movement_status: "Departed",     delay_min: 2,  speed_kmph: 88, last_update: "2026-09-23 10:58" },
+  { train_no: "11010", date: "2026-09-28", section_id: "SEC-106", direction: "Up",   movement_status: "Approaching",  delay_min: 3,  speed_kmph: 61, last_update: "2026-09-23 16:42" },
+  { train_no: "11034", date: "2026-09-28", section_id: "SEC-101", direction: "Down", movement_status: "At Station",   delay_min: 12, speed_kmph: 30, last_update: "2026-09-23 14:30" },
+  { train_no: "11026", date: "2026-09-27", section_id: "SEC-110", direction: "Up",   movement_status: "At Station",   delay_min: 3,  speed_kmph: 38, last_update: "2026-09-23 10:51" },
+  { train_no: "11070", date: "2026-09-24", section_id: "SEC-106", direction: "Down", movement_status: "At Station",   delay_min: 5,  speed_kmph: 71, last_update: "2026-09-23 09:13" },
+  { train_no: "11029", date: "2026-09-27", section_id: "SEC-104", direction: "Up",   movement_status: "Delayed",      delay_min: 0,  speed_kmph: 63, last_update: "2026-09-23 11:53" },
+  { train_no: "11099", date: "2026-09-27", section_id: "SEC-106", direction: "Up",   movement_status: "Approaching",  delay_min: 5,  speed_kmph: 57, last_update: "2026-09-23 12:33" },
+  { train_no: "11086", date: "2026-09-24", section_id: "SEC-103", direction: "Up",   movement_status: "Approaching",  delay_min: 8,  speed_kmph: 76, last_update: "2026-09-23 14:11" },
+  { train_no: "11006", date: "2026-09-24", section_id: "SEC-108", direction: "Up",   movement_status: "At Station",   delay_min: 15, speed_kmph: 72, last_update: "2026-09-23 10:51" },
+  { train_no: "11091", date: "2026-09-28", section_id: "SEC-110", direction: "Up",   movement_status: "On Time",      delay_min: 0,  speed_kmph: 36, last_update: "2026-09-23 12:00" },
+  { train_no: "11069", date: "2026-09-23", section_id: "SEC-103", direction: "Down", movement_status: "On Time",      delay_min: 3,  speed_kmph: 46, last_update: "2026-09-23 10:50" },
+  { train_no: "11040", date: "2026-09-23", section_id: "SEC-109", direction: "Down", movement_status: "On Time",      delay_min: 8,  speed_kmph: 32, last_update: "2026-09-23 09:05" },
+  { train_no: "11050", date: "2026-09-23", section_id: "SEC-109", direction: "Up",   movement_status: "Departed",     delay_min: 12, speed_kmph: 26, last_update: "2026-09-23 08:26" },
+  { train_no: "11036", date: "2026-09-28", section_id: "SEC-105", direction: "Down", movement_status: "Departed",     delay_min: 8,  speed_kmph: 30, last_update: "2026-09-23 09:46" },
+  { train_no: "11017", date: "2026-09-29", section_id: "SEC-106", direction: "Down", movement_status: "Departed",     delay_min: 3,  speed_kmph: 39, last_update: "2026-09-23 09:26" },
+  { train_no: "11067", date: "2026-09-24", section_id: "SEC-102", direction: "Down", movement_status: "Approaching",  delay_min: 8,  speed_kmph: 49, last_update: "2026-09-23 12:13" },
+  { train_no: "11035", date: "2026-09-27", section_id: "SEC-102", direction: "Up",   movement_status: "At Station",   delay_min: 3,  speed_kmph: 36, last_update: "2026-09-23 10:14" },
+  { train_no: "11114", date: "2026-09-28", section_id: "SEC-104", direction: "Down", movement_status: "Delayed",      delay_min: 15, speed_kmph: 23, last_update: "2026-09-23 08:35" },
+  { train_no: "11008", date: "2026-09-25", section_id: "SEC-102", direction: "Up",   movement_status: "Approaching",  delay_min: 5,  speed_kmph: 80, last_update: "2026-09-23 15:58" },
+  { train_no: "11044", date: "2026-09-23", section_id: "SEC-109", direction: "Down", movement_status: "Approaching",  delay_min: 15, speed_kmph: 90, last_update: "2026-09-23 15:35" },
+  { train_no: "11073", date: "2026-09-28", section_id: "SEC-102", direction: "Down", movement_status: "Departed",     delay_min: 0,  speed_kmph: 42, last_update: "2026-09-23 15:47" },
+  { train_no: "11068", date: "2026-09-28", section_id: "SEC-105", direction: "Down", movement_status: "Departed",     delay_min: 8,  speed_kmph: 88, last_update: "2026-09-23 13:17" },
+  { train_no: "11084", date: "2026-09-25", section_id: "SEC-107", direction: "Up",   movement_status: "At Station",   delay_min: 5,  speed_kmph: 89, last_update: "2026-09-23 11:52" },
+  { train_no: "11028", date: "2026-09-28", section_id: "SEC-110", direction: "Up",   movement_status: "At Station",   delay_min: 0,  speed_kmph: 59, last_update: "2026-09-23 14:14" },
+  { train_no: "11020", date: "2026-09-23", section_id: "SEC-102", direction: "Down", movement_status: "Approaching",  delay_min: 8,  speed_kmph: 39, last_update: "2026-09-23 13:10" },
+  { train_no: "11096", date: "2026-09-24", section_id: "SEC-102", direction: "Up",   movement_status: "On Time",      delay_min: 0,  speed_kmph: 86, last_update: "2026-09-23 10:19" },
+  { train_no: "11101", date: "2026-09-23", section_id: "SEC-104", direction: "Up",   movement_status: "Approaching",  delay_min: 5,  speed_kmph: 80, last_update: "2026-09-23 17:07" },
+  { train_no: "11009", date: "2026-09-27", section_id: "SEC-106", direction: "Up",   movement_status: "At Station",   delay_min: 0,  speed_kmph: 81, last_update: "2026-09-23 13:06" },
+  { train_no: "11014", date: "2026-09-23", section_id: "SEC-108", direction: "Up",   movement_status: "At Station",   delay_min: 0,  speed_kmph: 57, last_update: "2026-09-23 11:56" },
+  { train_no: "11085", date: "2026-09-26", section_id: "SEC-103", direction: "Down", movement_status: "Departed",     delay_min: 0,  speed_kmph: 67, last_update: "2026-09-23 11:13" },
+  { train_no: "11004", date: "2026-09-29", section_id: "SEC-108", direction: "Up",   movement_status: "Departed",     delay_min: 8,  speed_kmph: 75, last_update: "2026-09-23 14:44" },
+  { train_no: "11018", date: "2026-09-27", section_id: "SEC-110", direction: "Up",   movement_status: "Delayed",      delay_min: 2,  speed_kmph: 69, last_update: "2026-09-23 14:27" },
+  { train_no: "11039", date: "2026-09-24", section_id: "SEC-108", direction: "Up",   movement_status: "Approaching",  delay_min: 2,  speed_kmph: 30, last_update: "2026-09-23 15:12" },
+  { train_no: "11118", date: "2026-09-26", section_id: "SEC-103", direction: "Down", movement_status: "Departed",     delay_min: 2,  speed_kmph: 54, last_update: "2026-09-23 12:51" },
+  { train_no: "11007", date: "2026-09-26", section_id: "SEC-103", direction: "Down", movement_status: "Approaching",  delay_min: 15, speed_kmph: 72, last_update: "2026-09-23 11:12" },
+  { train_no: "11078", date: "2026-09-27", section_id: "SEC-110", direction: "Down", movement_status: "Delayed",      delay_min: 0,  speed_kmph: 37, last_update: "2026-09-23 12:56" },
+  { train_no: "11112", date: "2026-09-26", section_id: "SEC-108", direction: "Up",   movement_status: "At Station",   delay_min: 0,  speed_kmph: 77, last_update: "2026-09-23 12:38" },
+  { train_no: "11095", date: "2026-09-23", section_id: "SEC-103", direction: "Up",   movement_status: "Delayed",      delay_min: 12, speed_kmph: 61, last_update: "2026-09-23 08:19" },
+  { train_no: "11055", date: "2026-09-28", section_id: "SEC-108", direction: "Up",   movement_status: "On Time",      delay_min: 0,  speed_kmph: 88, last_update: "2026-09-23 08:22" },
+  { train_no: "11051", date: "2026-09-29", section_id: "SEC-104", direction: "Up",   movement_status: "On Time",      delay_min: 0,  speed_kmph: 56, last_update: "2026-09-23 12:35" },
+  { train_no: "11081", date: "2026-09-23", section_id: "SEC-108", direction: "Down", movement_status: "At Station",   delay_min: 0,  speed_kmph: 21, last_update: "2026-09-23 11:58" },
+  { train_no: "11047", date: "2026-09-26", section_id: "SEC-106", direction: "Down", movement_status: "Delayed",      delay_min: 0,  speed_kmph: 21, last_update: "2026-09-23 16:25" },
+];
